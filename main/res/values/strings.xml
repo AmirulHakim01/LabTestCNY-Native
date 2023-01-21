@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mind Sharpener</string>
+    <string name="instructions">Instructions:</string>
+    <string name="text2">This is a simple mathematic games which is believe can train your mind. Two numbers are given randomly based on your level choise with a mathematic operator. You just calculates the answer, write your answer and press check button. Every correct answer will give you 1 point and any wrong answer will deduct 1 point.</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="check">Check</string>
+    <string name="choose_level">Choose Level</string>
+    <string name="this_is_a_simple_mathematic_games_which_is_believe_can_train_your_mind_two_numbers_are_given_randomly_based_on_your_level_choise_with_a_mathematic_operator_you_just_calculates_the_answer_write_your_answer_and_press_check_button_every_correct_answer_will_give_you_1_point_and_any_wrong_answer_will_deduct_1_point">This is a simple mathematic games which is believe can train your mind. Two numbers are given randomly based on your level choise with a mathematic operator. You just calculates the answer, write your answer and press check button. Every correct answer will give you 1 point and any wrong answer will deduct 1 point.</string>
+    <string name="hard">Hard</string>
+</resources>

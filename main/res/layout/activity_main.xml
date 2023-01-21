@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="707dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="@string/instructions"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:text="@string/text2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/choose_level"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/option_easy"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/easy"
+                android:onClick="easy"/>
+
+            <RadioButton
+                android:id="@+id/option_medium"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/medium"
+                android:onClick="medium"/>
+
+            <RadioButton
+                android:id="@+id/option_hard"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hard"
+                android:onClick="hardd"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_answer"
+                android:inputType="numberSigned"
+                android:textSize="30dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="Check"
+            android:onClick="clickCheckButton"/>
+
+        <TextView
+            android:id="@+id/pointCounter"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:text="POINT : 0"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
